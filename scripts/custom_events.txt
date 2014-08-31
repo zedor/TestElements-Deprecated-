@@ -1,0 +1,12 @@
+"CustomEvents"
+{	
+	"testswf_test_element"
+	{
+		"_element"	"string"
+		"_bool"		"string"
+		"_x"		"short"
+		"_y"		"short"
+		"_width"	"short"
+		"_height"	"short"
+	}
+}
