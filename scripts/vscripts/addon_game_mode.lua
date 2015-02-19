@@ -29,6 +29,13 @@ function CAddonTemplateGameMode:InitGameMode()
 			FireGameEvent('testswf_test_element', { _element = _element, _bool = _bool, _x = _x, _y = _y, _width = _width, _height = _height } )
 		end
 	end, "Test valve element", 0 )
+
+	Convars:RegisterCommand( "testCmd", function(name, _cmd, _type, _value, _splice)
+		local cmdPlayer = Convars:GetCommandClient()
+		if cmdPlayer then 
+			FireGameEvent('testswf_test_cmd', { _cmd = _cmd, _type = _type, _value = _value, _splice = _splice } )
+		end
+	end, "Test valve element", 0 )
 	
 	GameRules:GetGameModeEntity():SetThink( "OnThink", self, "GlobalThink", 2 )
 end

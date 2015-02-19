@@ -8,7 +8,7 @@
 	"1"
 	{
 		"File"		"testSWF"
-		"Depth"		"50"
+		"Depth"		"500"
 	}
 	
 }
