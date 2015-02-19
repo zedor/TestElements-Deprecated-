@@ -23,7 +23,7 @@
 		}
 		
 		public function movef(e:MouseEvent) {
-			//trace('[mouseOver] t: ' + e.target + '; n: ' + e.target.name + '; p: ' + e.target.parent + '; p_n: ' + e.target.parent.name );
+			trace('[mouseOver] t: ' + e.target + '; n: ' + e.target.name + '; p: ' + e.target.parent + '; p_n: ' + e.target.parent.name );
 		}
 		
 		public function onLoaded() : void {			
