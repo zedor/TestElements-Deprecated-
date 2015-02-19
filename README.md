@@ -42,5 +42,5 @@ yrrep.me/dota/flash-components.php
   * Filter `selectButton`
   * Find the one with `heroDock` parent
   * Copy the inheritance **without the globals part**: `Loader_shared_heroselectorandloadout.movieClip.heroDock.selectButton`
-* Type into console: `testCmd Loader_shared_heroselectorandloadout.movieClip.heroDock.selectButton.enabled bool false`
+* Type into console: `testCmd Loader_shared_heroselectorandloadout.movieClip.heroDock.removeChild brackets Loader_shared_heroselectorandloadout.movieClip.heroDock.selectButton true`
 * Result: http://i.imgur.com/KFpv4v4.jpg
