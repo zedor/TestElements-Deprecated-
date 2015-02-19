@@ -10,7 +10,7 @@ yrrep.me/dota/flash-components.php
 * Put the files in their correct folders
 
 * Mouse over stuff to get info in the console (`-scaleform_spew 1`)
-  * `[mouseOver] t: target; n: target.name; p: target.parent; p_n: target.parent.name;
+  * `[mouseOver] t: target; n: target.name; p: target.parent; p_n: target.parent.name;`
 
 * Use console command `testElement <element_name> <x> <y> <width> <height>`
   * `testElement DB4_floading_panel`
