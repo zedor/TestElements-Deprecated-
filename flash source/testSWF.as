@@ -9,6 +9,7 @@
 	//import for replaceelement
 	import flash.utils.getDefinitionByName;
 	import flash.events.MouseEvent;
+	import flash.text.TextField;
 	
 	public class testSWF extends MovieClip {
 		
@@ -42,7 +43,6 @@
 		}
 		
 		public function testCommand(args:Object) {
-			//globals["Loader_shared_heroselectorandloadout"]["movieClip"]["heroDock"]["selectButton"];
 			var buffArr:Array = splitStr(args._cmd);
 			var buffObj = globals[buffArr[0]];
 			buffArr.shift();
@@ -64,10 +64,10 @@
 				
 				if( args._type == "brackets" ) buffObj[buffArr[0]](buffObj2[buffArr2[0]]);
 			} else {
-				if( args._type == "bool" ) buffObj[buffArr[0]] = Boolean(args._val);
-				if( args._type == "float" ) buffObj[buffArr[0]] = Number(args._val);
-				if( args._type == "string" ) buffObj[buffArr[0]] = args._val.toString();;
-				if( args._type == "int" ) buffObj[buffArr[0]] = int(args._val);
+				if( args._type == "bool" ) buffObj[buffArr[0]] = Boolean(args._value);
+				if( args._type == "float" ) buffObj[buffArr[0]] = Number(args._value);
+				if( args._type == "string" ) buffObj[buffArr[0]] = args._value.toString();
+				if( args._type == "int" ) buffObj[buffArr[0]] = int(args._value);
 			}
 		}
 		
